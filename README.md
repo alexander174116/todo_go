@@ -104,13 +104,13 @@ todo-app/
 │       └── main.go
 │
 ├── internal/
-│   ├── todo/
-│   │   ├── task.go
-│   │   ├── manager.go
-│   │
-│   └── storage/
-│       ├── json_storage.go
-│       └── csv_storage.go
+│   └── todo/
+│       ├── task.go
+│       └── manager.go
+│   
+├── storage/
+│   ├── json_storage.go
+│   └── csv_storage.go
 │
 ├── tasks.json
 └── README.md
