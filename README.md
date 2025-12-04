@@ -23,7 +23,7 @@ go build -o todo ./cmd/todo
 ### ▶️ 2. Запуск
 Пример:
 ```
-./todo list --add="test task"
+./todo add --desc="test task"
 ```
 
 ---
