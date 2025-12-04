@@ -35,6 +35,9 @@ func Load(tasks []Task) ([]Task, error) {
 		}
 		return nil, fmt.Errorf("ошибка чтения файла: %w", err)
 	}
+	if len(buf) == 0 {
+		return tasks, nil
+	}
 	err = json.Unmarshal(buf, &tasks)
 	if err != nil {
 		return nil, fmt.Errorf("ошибка дисериализации: %w", err)
