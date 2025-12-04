@@ -5,7 +5,7 @@ import (
 	"fmt"
 )
 
-var TasksJsonStorage = "..tasks.json" // не делал константой для гибкости
+var TasksJsonStorage = "tasks.json" // не делал константой для гибкости
 
 // Add - добавление новой задачи
 func Add(tasks []Task, desc string) []Task {

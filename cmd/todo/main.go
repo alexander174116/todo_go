@@ -22,7 +22,7 @@ func main() {
 
 	var usedFlagArg string
 	if len(os.Args) < 2 {
-		fmt.Println("введите команду для запуска программы\nдоступные команды: add, list, complete/delete, load, LoadJSON/LoadCSV, export")
+		fmt.Println("введите команду для запуска программы\nдоступные команды: add, list, complete/delete, load, export")
 		os.Exit(1)
 	}
 	switch os.Args[1] {
@@ -165,7 +165,7 @@ func main() {
 
 			fmt.Println("export done in path:", outPath)
 		case "csv":
-			if outPath == "" {
+			if outPath == "" || outPath == "none" {
 				fmt.Println("введите имя файла, в который экспортировать задачи: --out=[export_path]")
 				os.Exit(1)
 			}
